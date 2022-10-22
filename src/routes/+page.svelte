@@ -1,4 +1,8 @@
 <script lang="ts">
+    export let data
+
+    console.log(data)
+
     import axios from 'axios'
 
     async function logIn() {
@@ -13,7 +17,7 @@
     }
 </script>
 
-<button on:click={getData}>Iniciar sesion</button>
+<button on:click={logIn}>Iniciar sesion</button>
 
 <h1>Welcome to SvelteKit</h1>
 <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
